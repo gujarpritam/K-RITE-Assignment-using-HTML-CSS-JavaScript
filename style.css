@@ -4,19 +4,162 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-around;
+  font-family: 'Roboto', sans-serif, serif;
+  /* font-size: small; */
 }
 
-section{
+img{
+  height: 20px;
+  width: 20px;
+  background: none;
+}
+
+aside{
   height: 100vh;
-  width: 35vw;
+  width: 20vw;
   border: 1px solid red;
   border-radius: 10px;
 }
 
 main{
   height: 100vh;
-  width: 60vw;
+  width: 75vw;
   border: 1px solid black;
   border-radius: 10px;
 }
 
+aside > div:nth-child(1){
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 5px 0px;
+}
+
+aside > div:nth-child(1) *, .design_team *, .marketing_team *, .development_team *, .create_team *, aside > div:nth-child(6) *,  .folder *, .invite *, .help *, .trial * {
+  margin-left: 2%;
+}
+
+aside > div:nth-child(1) > img{
+  height: 35px;
+  width: 35px;
+  border-radius: 5px;
+}
+
+
+
+aside > div:nth-child(1) > img:nth-child(3), .design_team > div:nth-child(3), .marketing_team > div:nth-child(3), .development_team > div:nth-child(3), .trial > button, .folder > div{
+  position: absolute;
+  right: 3%;
+}
+
+h1{
+font-size: medium;
+}
+
+.design_team, .marketing_team, .development_team, .create_team, aside > div:nth-child(6), .folder, .invite, .help, .trial{
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: -7% 0px;
+  height: auto;
+}
+
+.design_team > div:nth-child(3), .marketing_team > div:nth-child(3), .development_team > div:nth-child(3){
+border: 1px solid rgb(187, 187, 187);
+padding: 2px;
+border-radius: 5px;
+}
+
+ul{
+  list-style: none;
+  margin-top: -4%;
+}
+
+.trial > button{
+  background: black;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+}
+
+
+/* main part style */
+header{
+  width: 95%;
+  margin: auto;
+}
+
+header > div{
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid rgb(218, 218, 218); */
+}
+
+
+
+
+header > div:nth-child(1) > div{
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+header > div:nth-child(1) > div > span{
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 1% 1% 0% 1%;
+  margin-left: 3%;
+}
+
+.input_box{
+  display: flex;
+  align-items: center;
+  border: 1px solid gray;
+  border-radius: 5px;
+  height: 50%;
+  width: 70%;
+}
+
+.input_box > img{
+  position: relative;
+  left: 2%;
+  top: 2%;
+  height: 18px;
+  width: 18px;
+}
+
+.input_box > input{
+  width: 80%;
+  height: 50%;
+  border: none;
+  margin-left: 2%;
+}
+
+header > div:nth-child(3){
+  width: 95%;
+}
+
+header > div:nth-child(3) *{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header > div:nth-child(3) span *{
+margin-left: 5%;
+}
+
+header > div:nth-child(3) span{
+  margin-left: 10%;
+  border: 1px solid rgb(219, 219, 219);
+  height: 40%;
+  width: 100%;
+  padding-right: 10%;
+  border-radius: 5px;
+}
+
+.drop_down_arrow{
+  height: 5px;
+  width: 5px;
+}
