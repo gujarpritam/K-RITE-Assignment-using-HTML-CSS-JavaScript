@@ -99,7 +99,6 @@ display: flex;
 .trial button:hover{
   cursor: pointer;
   scale: 1.05;
-  /* box-shadow: 2px 2px; */
 }
 
 
@@ -114,7 +113,6 @@ header{
 header > div{
   display: flex;
   justify-content: space-between;
-  /* border: 1px solid rgb(218, 218, 218); */
 }
 
 header > div:nth-child(1) > div{
@@ -209,17 +207,16 @@ tr:hover{
   box-shadow: 0 0 0 2px rgb(222, 222, 222);
 }
 
+#brands:hover{
+  cursor: pointer;
+}
+
 tr > td:nth-child(1) > input, tr label:hover{
   cursor: pointer;
 }
 
 .headings > th:nth-child(1){
   width: 25%;
-}
-
-input[type="checkbox"]{
-height: 7px;
-width: 7px;
 }
 
 .total_count:hover{
@@ -245,7 +242,6 @@ width: 7px;
   bottom: 2%;
   left: 30%;
   width: auto;
-  /* margin: auto; */
   border: 1px solid rgb(207, 207, 207);
   padding: 10px 20px;
   border-radius: 5px;
@@ -381,14 +377,12 @@ aside > div:nth-child(1) > img{
     flex-direction: column;
     justify-content: flex-start;  
     margin-bottom: 1%;
-    /* border: 1px solid red; */
   }
 
   header > div:nth-child(3) > div{
     display: flex;
     justify-content: flex-start;
     width: auto;
-    /* border: 1px solid rebeccapurple; */
   }
 
   header > div:nth-child(3) span{
@@ -397,8 +391,12 @@ aside > div:nth-child(1) > img{
     margin-left: 2%;
     width: auto;
     padding: 0% 2%;
-    /* height: 30%; */
   }
+
+  input[type="checkbox"]{
+    height: 7px;
+    width: 7px;
+    }
 
   .selection_details{
     left: 10%;

@@ -119,8 +119,8 @@
           <h2>Products</h2>
           <div>
             <span class="input_box">
-              <img src="./assets/main images/search.png" />
-              <input placeholder="Search for.." />
+              <img onclick="search()" src="./assets/main images/search.png" />
+              <input type="text" placeholder="Search for.." />
             </span>
 
             <span class="message"
@@ -136,7 +136,7 @@
 
         <div>
           <div>
-            <span>
+            <span onclick="menu()">
               <img src="./assets/main images/all_brands.png" />
               <h6>All Brands</h6>
               <img
@@ -145,7 +145,7 @@
               />
             </span>
 
-            <span>
+            <span onclick="menu()">
               <h6>Desk</h6>
               <img
                 class="drop_down_arrow"
@@ -153,7 +153,7 @@
               />
             </span>
 
-            <span>
+            <span onclick="menu()">
               <h6>Tags</h6>
               <img
                 class="drop_down_arrow"
@@ -161,24 +161,24 @@
               />
             </span>
 
-            <span>
+            <span onclick="menu()">
               <img src="./assets/main images/sort.png" />
               <h6>Sort</h6>
             </span>
 
-            <span>
+            <span onclick="menu()">
               <img src="./assets/main images/filter.png" />
               <h6>Filter</h6>
             </span>
           </div>
 
           <div>
-            <span>
+            <span onclick="menu()">
               <img src="./assets/images/create_team.jpg" />
               <h6>Meeting</h6>
             </span>
 
-            <span>
+            <span onclick="menu()">
               <img src="./assets/main images/import_export.png" />
               <h6>Import/Export</h6>
             </span>
@@ -202,9 +202,9 @@
           <th>+</th>
         </tr>
 
-        <tr>
+        <tr id="Wix" class="brandRow">
           <td>
-            <input type="checkbox" id="wix" />
+            <input type="checkbox" id="wix" class="brand" />
             <img src="./assets/main images/brands/wix.png" />
             <label for="wix">Wix</label>
           </td>
@@ -221,9 +221,9 @@
           </td>
         </tr>
 
-        <tr>
+        <tr id="Shopify" class="brandRow">
           <td>
-            <input type="checkbox" id="shopify" />
+            <input type="checkbox" id="shopify" class="brand" />
             <img src="./assets/main images/brands/shopify.png" />
             <label for="shopify">Shopify</label>
           </td>
@@ -242,9 +242,9 @@
           </td>
         </tr>
 
-        <tr>
+        <tr id="MailChimp" class="brandRow">
           <td>
-            <input type="checkbox" id="mailchimp" />
+            <input type="checkbox" id="mailchimp" class="brand" />
             <img src="./assets/main images/brands/mailchimp.png" />
             <label for="mailchimp">MailChimp</label>
           </td>
@@ -263,9 +263,9 @@
           </td>
         </tr>
 
-        <tr>
+        <tr id="PayPal" class="brandRow">
           <td>
-            <input type="checkbox" id="paypal" />
+            <input type="checkbox" id="paypal" class="brand" />
             <img src="./assets/main images/brands/paypal.png" />
             <label for="paypal">PayPal</label>
           </td>
@@ -283,9 +283,9 @@
           </td>
         </tr>
 
-        <tr>
+        <tr id="Disney" class="brandRow">
           <td>
-            <input type="checkbox" id="disney" />
+            <input type="checkbox" id="disney" class="brand" />
             <img src="./assets/main images/brands/disney.png" />
             <label for="disney">Disney</label>
           </td>
@@ -303,9 +303,9 @@
           </td>
         </tr>
 
-        <tr>
+        <tr id="Intercom" class="brandRow">
           <td>
-            <input type="checkbox" id="intercom" />
+            <input type="checkbox" id="intercom" class="brand" />
             <img src="./assets/main images/brands/intercom.png" />
             <label for="intercom">Intercom</label>
           </td>
@@ -323,9 +323,9 @@
           </td>
         </tr>
 
-        <tr>
+        <tr id="Google" class="brandRow">
           <td>
-            <input type="checkbox" id="google" />
+            <input type="checkbox" id="google" class="brand" />
             <img src="./assets/main images/brands/google.png" />
             <label for="google">Google</label>
           </td>
@@ -344,9 +344,9 @@
           </td>
         </tr>
 
-        <tr>
+        <tr id="Evernote" class="brandRow">
           <td>
-            <input type="checkbox" id="evernote" />
+            <input type="checkbox" id="evernote" class="brand" />
             <img src="./assets/main images/brands/evernote.jpg" />
             <label for="evernote">Evernote</label>
           </td>
@@ -364,9 +364,9 @@
           </td>
         </tr>
 
-        <tr>
+        <tr id="Microsoft" class="brandRow">
           <td>
-            <input type="checkbox" id="microsoft" />
+            <input type="checkbox" id="microsoft" class="brand" />
             <img src="./assets/main images/brands/microsoft.png" />
             <label for="microsoft">Microsoft</label>
           </td>
@@ -385,9 +385,9 @@
           </td>
         </tr>
 
-        <tr>
+        <tr id="Invision" class="brandRow">
           <td>
-            <input type="checkbox" id="invision" />
+            <input type="checkbox" id="invision" class="brand" />
             <img src="./assets/main images/brands/invision.png" />
             <label for="invision">Invision</label>
           </td>
