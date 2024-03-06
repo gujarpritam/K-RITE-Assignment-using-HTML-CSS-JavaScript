@@ -14,6 +14,7 @@
     <script src="./script.js" defer></script>
   </head>
   <body>
+    <!-- Aside Section -->
     <aside>
       <div>
         <img src="/assets/images/website.png" />
@@ -42,7 +43,7 @@
         <div>+ 3</div>
       </div>
 
-      <div class="create_team">
+      <div class="create_team effect">
         <img src="/assets/images/create_team.jpg" />
         <h5>Create a team</h5>
       </div>
@@ -51,7 +52,7 @@
 
       <div class="folder">
         <h5>FOLDERS</h5>
-        <div>+</div>
+        <div class="effect">+</div>
       </div>
 
       <div class="product_folder">
@@ -67,9 +68,9 @@
           <li>Team</li>
           <li>Analytics</li>
         </ul>
-        <div class="folder">
+        <div class="folder effect">
           <img src="./assets/images/create_team.jpg" />
-          <p>Add new sub</p>
+          <h5>Add new sub</h5>
         </div>
       </div>
 
@@ -93,12 +94,12 @@
         <h5>Legal</h5>
       </div>
 
-      <div class="invite">
+      <div class="invite effect">
         <img src="/assets/images/invite_teammate.png" />
         <h5>Invite Teammates</h5>
       </div>
 
-      <div class="help">
+      <div class="help effect">
         <img src="/assets/images/help.png" />
         <h5>Help and first steps</h5>
       </div>
@@ -109,8 +110,9 @@
       </div>
     </aside>
 
-    <!-- main part -->
+    <!-- Main Section -->
     <main>
+      <!-- Header of Main Section -->
       <header>
         <div>
           <h2>Products</h2>
@@ -120,8 +122,12 @@
               <input placeholder="Search for.." />
             </span>
 
-            <span><img src="./assets/main images/chat.jpg" /></span>
-            <span><img src="./assets/main images/setting.png" /></span>
+            <span class="message"
+              ><img src="./assets/main images/chat.jpg"
+            /></span>
+            <span class="setting"
+              ><img src="./assets/main images/setting.png"
+            /></span>
           </div>
         </div>
 
@@ -179,17 +185,258 @@
         </div>
       </header>
 
+      <!-- Details of Brands -->
       <table>
+        <tr class="headings">
+          <th>
+            <input type="checkbox" id="brands" />
+            <label for="brands">Brand</label>
+          </th>
+
+          <th>Description</th>
+          <th>Members</th>
+          <th>Categories</th>
+          <th>Tags</th>
+          <th>Next Meeting</th>
+          <th>+</th>
+        </tr>
+
         <tr>
-          <th></th>
-          <th></th>
-          <th></th>
-          <th></th>
-          <th></th>
-          <th></th>
-          <th></th>
+          <td>
+            <input type="checkbox" id="wix" />
+            <img src="./assets/main images/brands/wix.png" />
+            <label for="wix">Wix</label>
+          </td>
+          <td>Develop a personalized fit...</td>
+          <td>members</td>
+          <td>
+            <span>Automation</span>
+          </td>
+          <td>
+            <span>#DigitalTransformation</span>
+          </td>
+          <td>
+            <span>in 30 minutes</span>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <input type="checkbox" id="shopify" />
+            <img src="./assets/main images/brands/shopify.png" />
+            <label for="shopify">Shopify</label>
+          </td>
+          <td>Introduce a cloud-based...</td>
+          <td>members</td>
+          <td>
+            <span>E-commerce</span>
+            <span>B2B</span>
+          </td>
+          <td>
+            <span>#OnlineShopping</span>
+            <span>#DigitalTransformation</span>
+          </td>
+          <td>
+            <span>Tomorrow</span>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <input type="checkbox" id="mailchimp" />
+            <img src="./assets/main images/brands/mailchimp.png" />
+            <label for="mailchimp">MailChimp</label>
+          </td>
+          <td>Develop a mobile app aiming...</td>
+          <td>members</td>
+          <td>
+            <span>SAAS</span>
+            <span>Mobile</span>
+          </td>
+          <td>
+            <span>#TechInnovation</span>
+            <span>#Cloud</span>
+          </td>
+          <td>
+            <span>Tomorrow</span>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <input type="checkbox" id="paypal" />
+            <img src="./assets/main images/brands/paypal.png" />
+            <label for="paypal">PayPal</label>
+          </td>
+          <td>This program could include...</td>
+          <td>members</td>
+          <td>
+            <span>Marketplace</span>
+          </td>
+          <td>
+            <span>#BuySellOnline</span>
+            <span>#OnlineBuying</span>
+          </td>
+          <td>
+            <span>in 6 hours</span>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <input type="checkbox" id="disney" />
+            <img src="./assets/main images/brands/disney.png" />
+            <label for="disney">Disney</label>
+          </td>
+          <td>Introduce a B2B solution for...</td>
+          <td>members</td>
+          <td>
+            <span>B2B</span>
+            <span>B2C</span>
+          </td>
+          <td>
+            <span>#BusinessParterships</span>
+          </td>
+          <td>
+            <span>No contact</span>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <input type="checkbox" id="intercom" />
+            <img src="./assets/main images/brands/intercom.png" />
+            <label for="intercom">Intercom</label>
+          </td>
+          <td>Implement an AI driven...</td>
+          <td>members</td>
+          <td>
+            <span>Technology</span>
+            <span>SAAS</span>
+          </td>
+          <td>
+            <span>#SmartFinance</span>
+          </td>
+          <td>
+            <span>in 1 hour</span>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <input type="checkbox" id="google" />
+            <img src="./assets/main images/brands/google.png" />
+            <label for="google">Google</label>
+          </td>
+          <td>Offer a comprehensive cy...</td>
+          <td>members</td>
+          <td>
+            <span>Finance</span>
+            <span>Automation</span>
+          </td>
+          <td>
+            <span>#SmartFinance</span>
+            <span>#WorkFlows</span>
+          </td>
+          <td>
+            <span>in 1 hour</span>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <input type="checkbox" id="evernote" />
+            <img src="./assets/main images/brands/evernote.jpg" />
+            <label for="evernote">Evernote</label>
+          </td>
+          <td>This could smart...</td>
+          <td>members</td>
+          <td>
+            <span>Transportation</span>
+          </td>
+          <td>
+            <span>#LogisticsTech</span>
+            <span>#UX</span>
+          </td>
+          <td>
+            <span>Next month</span>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <input type="checkbox" id="microsoft" />
+            <img src="./assets/main images/brands/microsoft.png" />
+            <label for="microsoft">Microsoft</label>
+          </td>
+          <td>Launch an advisory service...</td>
+          <td>members</td>
+          <td>
+            <span>Publishing</span>
+            <span>B2C</span>
+          </td>
+          <td>
+            <span>#B2CMarketing</span>
+            <span>#Retail</span>
+          </td>
+          <td>
+            <span>No contact</span>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <input type="checkbox" id="invision" />
+            <img src="./assets/main images/brands/invision.png" />
+            <label for="invision">Invision</label>
+          </td>
+          <td>The tool would analyze tre...</td>
+          <td>members</td>
+          <td>
+            <span>Web Services</span>
+          </td>
+          <td>
+            <span>#APIIntegration</span>
+          </td>
+          <td>
+            <span>Next month</span>
+          </td>
+        </tr>
+
+        <tr class="total_count">
+          <td>10 count</td>
+          <td>+ Add calculation</td>
+          <td>+ Add calculation</td>
+          <td>+ Add calculation</td>
+          <td>+ Add calculation</td>
+          <td></td>
         </tr>
       </table>
+
+      <!-- Count of Selected Brands -->
+      <div class="selection_details">
+        <span class="selected_brands"><span>0</span><span>selected</span></span>
+
+        <span
+          ><img src="./assets/main images/archieve.png" />
+          <span>Archieve</span>
+        </span>
+
+        <span
+          ><img src="./assets/main images/delete.png" />
+          <span>Delete</span>
+        </span>
+
+        <span>
+          <span>More</span>
+          <img
+            class="drop_down_arrow"
+            src="./assets/main images/drop_down_arrow.png"
+          />
+        </span>
+
+        <span> X </span>
+      </div>
     </main>
   </body>
 </html>

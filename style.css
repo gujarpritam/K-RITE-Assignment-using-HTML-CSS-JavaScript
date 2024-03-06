@@ -9,24 +9,27 @@ body{
 }
 
 img{
-  height: 20px;
-  width: 20px;
+  height: 15px;
+  width: 15px;
   background: none;
 }
 
 aside{
-  height: 100vh;
+  height: 98vh;
   width: 20vw;
-  border: 1px solid red;
+  border: 1px solid rgb(186, 186, 186);
   border-radius: 10px;
 }
 
 main{
-  height: 100vh;
+  height: 98vh;
   width: 75vw;
-  border: 1px solid black;
+  border: 1px solid rgb(186, 186, 186);
   border-radius: 10px;
 }
+
+
+/* Aside Section Style */
 
 aside > div:nth-child(1){
   display: flex;
@@ -45,8 +48,6 @@ aside > div:nth-child(1) > img{
   border-radius: 5px;
 }
 
-
-
 aside > div:nth-child(1) > img:nth-child(3), .design_team > div:nth-child(3), .marketing_team > div:nth-child(3), .development_team > div:nth-child(3), .trial > button, .folder > div{
   position: absolute;
   right: 3%;
@@ -62,17 +63,26 @@ font-size: medium;
   align-items: center;
   margin: -7% 0px;
   height: auto;
+  
 }
+
+.effect:hover{
+  cursor: pointer;
+  scale: 1.01;
+  text-shadow: 1px 1px 2px rgb(220, 220, 220);
+  }
 
 .design_team > div:nth-child(3), .marketing_team > div:nth-child(3), .development_team > div:nth-child(3){
 border: 1px solid rgb(187, 187, 187);
 padding: 2px;
 border-radius: 5px;
+font-size: small;
 }
 
 ul{
   list-style: none;
   margin-top: -4%;
+  font-size: small;
 }
 
 .trial > button{
@@ -82,9 +92,16 @@ ul{
   border: none;
   padding: 5px;
 }
+.trial button:hover{
+  cursor: pointer;
+  scale: 1.05;
+  /* box-shadow: 2px 2px; */
+}
 
 
-/* main part style */
+/* Main Section Style */
+
+/* Header Style */
 header{
   width: 95%;
   margin: auto;
@@ -95,9 +112,6 @@ header > div{
   justify-content: space-between;
   /* border: 1px solid rgb(218, 218, 218); */
 }
-
-
-
 
 header > div:nth-child(1) > div{
 display: flex;
@@ -163,3 +177,95 @@ header > div:nth-child(3) span{
   height: 5px;
   width: 5px;
 }
+
+.input_box:hover, .message:hover, .setting:hover, header > div:nth-child(3) > div > span:hover{
+  cursor: pointer;
+  box-shadow: 0 0 0 1px rgb(222, 222, 222);
+}
+
+
+
+/* Style to list of Brands */
+table, th, tr, td{
+  border: 1px solid rgb(203, 203, 203);
+  border-collapse: collapse;
+}
+
+table{
+  width: 100%;
+}
+
+.total_count > td{
+text-align: end;
+padding-right: 5px;
+}
+
+tr:hover{
+  cursor: pointer;
+  box-shadow: 0 0 0 2px rgb(222, 222, 222);
+}
+
+tr > td:nth-child(1) > input, tr label:hover{
+  cursor: pointer;
+}
+
+.total_count:hover{
+  cursor: auto;
+  border: 1px solid rgb(203, 203, 203);
+  box-shadow: none;
+}
+
+.headings:hover{
+  cursor: auto;
+  border: 1px solid rgb(203, 203, 203);
+  box-shadow: none;
+}
+
+
+/* Selected Brands Style */
+.selection_details{
+  position: fixed;
+  bottom: 2%;
+  left: 40%;
+  width: 25%;
+  margin: auto;
+  border: 1px solid rgb(207, 207, 207);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.selection_details > span{ 
+  margin-left: 2.5%;
+}
+
+.selection_details > span > span{ 
+margin-left: 1%;
+}
+
+.selection_details > span:nth-child(1) > span:nth-child(1){ 
+background: black;
+color: white;
+padding: 3px;
+border-radius: 3px;
+}
+
+.selection_details > span:nth-child(2), .selection_details > span:nth-child(3), .selection_details > span:nth-child(4) {
+  border: 1px solid rgb(207, 207, 207);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.selection_details > span:hover{
+   cursor: pointer;
+  box-shadow: 0 0 0 2px rgb(222, 222, 222);
+}
+
+.selection_details > .selected_brands:hover{
+  cursor: auto;
+  box-shadow: none;
+}
+
+table, .selection_details{
+  font-size: smaller;
+}
+ 
